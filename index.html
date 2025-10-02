@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .nav {
+            border-bottom: 0.5px solid white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            height: 70px;
+            width: 100%;
+        }
+
+        img {
+            height: 40px;
+            padding: 13px;
+            width: 160px;
+        }
+
+        #what {
+            display: flex;
+            justify-content: space-evenly;
+            width: 60%;
+        }
+
+
+        #pla {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            width: 20%;
+            display: flex;
+            justify-content: space-around;
+            padding-right: 40px;
+            gap: 20px;
+
+
+        }
+
+        select option {
+            color: rgb(255, 254, 254);
+            background-color: black;
+            font-size: large;
+        }
+
+        select {
+            color: rgb(255, 254, 254);
+            background: transparent;
+            border: none;
+            outline: none;
+            font-size: larger;
+            border-color: black;
+        }
+
+        select:hover {
+            color: chartreuse;
+        }
+
+        a {
+            color: white;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: chartreuse;
+        }
+
+        button {
+            border-radius: 20px;
+            height: 42px;
+            width: 100px;
+        }
+
+        #b1 {
+            border-color: chartreuse;
+            background-color: black;
+            color: chartreuse;
+            font-size: medium;
+        }
+
+        #b2 {
+            background-color: chartreuse;
+            font-size: medium;
+            border-color: chartreuse;
+        }
+
+        #menubar {
+            display: none;
+        }
+
+        @media screen and (max-width:1279px) {
+
+            #what {
+                display: none;
+            }
+
+            #menubar {
+                display: flex;
+                padding-left: 40px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjWSEK-qUXIhw-vYFdccmArLpv4uGdzDtUg&s"
+                alt=""></div>
+        <div id="what">
+            <select name="" id="" placeholder="">
+                <option value="">What We Offered</option>
+                <option value="">Invest</option>
+                <option value="">Crypto</option>
+                <option value="">Options</option>
+                <option value="">Futures</option>
+                <option value="">Trading</option>
+            </select>
+            <a href="">Stratagies</a>
+            <a href="">Gold</a>
+            <a href="">Legend</a>
+            <a href="">Learn</a>
+            <a href="">Support</a>
+        </div>
+
+        <div id="pla">
+            <select name="" id="">
+                <option value="">US</option>
+                <option value="">UK</option>
+                <option value="">EU</option>
+            </select>
+            <button id="b1">Login in</button>
+            <button id="b2">Sign up</button>
+        </div>
+        <div id="menubar">
+            <img src="https://img.icons8.com/ios11/512/FFFFFF/menu.png" alt="" style="width: 40px;">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
