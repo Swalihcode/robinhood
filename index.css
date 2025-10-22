@@ -1,0 +1,326 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+body {
+    background-color: black;
+}
+
+.nav {
+    position: fixed;
+    border-bottom: 0.5px solid white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+}
+
+img {
+    height: 40px;
+    padding: 13px;
+    width: 160px;
+}
+
+#what {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-right: 60px;
+}
+
+
+#country {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 40px;
+    gap: 10px;
+    margin-right: 50px;
+
+
+}
+
+select option {
+    color: rgb(255, 254, 254);
+    background-color: black;
+    font-size: large;
+}
+
+select {
+    color: rgb(255, 254, 254);
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: larger;
+    border-color: black;
+}
+
+select:hover {
+    color: chartreuse;
+}
+
+a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+a:hover {
+    color: chartreuse;
+}
+
+button {
+    border-radius: 20px;
+    height: 42px;
+    width: 100px;
+}
+
+#b1 {
+    border-color: chartreuse;
+    background-color: black;
+    color: chartreuse;
+    font-size: medium;
+}
+
+#b2 {
+    background-color: chartreuse;
+    font-size: medium;
+    border-color: chartreuse;
+}
+
+#menubar {
+    display: none;
+}
+
+@media screen and (max-width:430px) {
+
+    #what {
+        display: none;
+    }
+
+    #menubar {
+        display: flex;
+        
+    }
+
+
+}
+
+
+
+/* slides0 */
+video {
+    width: 100%;
+}
+#video_2{
+    display: none;
+}
+
+.slide0 {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+
+#content0 {
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    width: 500px;
+
+
+}
+
+@media screen and (max-width:430px) {
+    #content0 {
+        position: absolute;
+        top: 30px;
+        left: 30%;
+        width: 500px;
+        text-align: center;
+        background-color: red;
+    }
+
+    #video_2 {
+        width:100%;
+        height: auto;
+    }
+    #video_{
+        display: none;
+    }
+}
+
+
+/* slide1 */
+.slide1 {
+
+    background-image: url(https://images.ctfassets.net/ilblxxee70tt/72AW6WOPCImTemmsfDxVFk/276b95a7314a0d484a27f3f51cc47a82/web_homepage_investing_2.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+
+    /* background-color: yellow; */
+}
+
+#content1 {
+    position: relative;
+    margin-top: 200px;
+    left: 770px;
+    width: 450px;
+    height: 300px;
+}
+        @media screen and (max-width:430px) {
+            .slide1{
+                width: 100%;
+                background-image: url("https://images.ctfassets.net/ilblxxee70tt/1jvtb9LgLK7amOfYSgNVk7/d1504fdcb9be25bfa5142ee1481b9f32/mobile_homepage_investing_4x.jpeg");
+            }
+        }
+/* slide2 */
+.slide2 {
+    background-image: url(https://images.ctfassets.net/ilblxxee70tt/1yBfcc0Y35v8vHS6eUXWMR/5ba2fd65e0cc48044084099e57625f94/web_crypto_hero.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+
+}
+
+#content2 {
+    position: relative;
+    margin-top: 200px;
+    left: 760px;
+    width: 450px;
+    height: 300px;
+}
+
+/* slide3 */
+.slide3 {
+    background-image: url(https://images.ctfassets.net/ilblxxee70tt/2IeGSELP82mOWLNZHSE5R5/2dd98fffc51573df6d68de384a175435/RH25_Strategiespromo_wide_homepage_hero.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+
+}
+
+#content3 {
+    position: relative;
+    margin-top: 200px;
+    left: 200px;
+    width: 450px;
+    height: 300px;
+}
+
+/* slide4 */
+.slide4 {
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(26, 13, 4);
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+}
+
+.content4_1 {
+    width: 50rem;
+    height: auto;
+
+}
+
+.content4_1>button {
+    margin-left: 30%;
+
+}
+
+.content4_2 {
+
+    width: 50rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 24rem);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding-top: 6rem;
+    text-align: center;
+
+
+}
+
+.content4_2 div>img {
+    width: 180px;
+    height: auto;
+
+}
+
+
+/* slide5 */
+.slide5 {
+    background-color: chartreuse;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+#content5 {
+    position: relative;
+    left: 45px;
+    padding-top: 40px;
+    width: 600px;
+    height: 20px;
+
+
+}
+
+/* slide6 */
+.slide6 {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+.content6 {
+    position: absolute;
+    width: 40rem;
+    top: 10rem;
+    left: 20rem;
+
+
+}
+
+
+/* slide7 */
+.slide7 {
+    background-color: chartreuse;
+    width: 100%;
+    height: 1900px;
+}
+
+.linktags7 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.linktags7:hover {
+    color: gray;
+}
+
+#content7 {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+}

@@ -5,115 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            background-color: black;
-        }
+    <link rel="stylesheet" href="index.css">
 
-        .nav {
-            border-bottom: 0.5px solid white;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            background-color: black;
-            height: 70px;
-            width: 100%;
-        }
-
-        img {
-            height: 40px;
-            padding: 13px;
-            width: 160px;
-        }
-
-        #what {
-            display: flex;
-            justify-content: space-evenly;
-            width: 60%;
-        }
-
-
-        #pla {
-            background-color: rgb(0, 0, 0);
-            color: white;
-            width: 20%;
-            display: flex;
-            justify-content: space-around;
-            padding-right: 40px;
-            gap: 20px;
-
-
-        }
-
-        select option {
-            color: rgb(255, 254, 254);
-            background-color: black;
-            font-size: large;
-        }
-
-        select {
-            color: rgb(255, 254, 254);
-            background: transparent;
-            border: none;
-            outline: none;
-            font-size: larger;
-            border-color: black;
-        }
-
-        select:hover {
-            color: chartreuse;
-        }
-
-        a {
-            color: white;
-            font-size: large;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: chartreuse;
-        }
-
-        button {
-            border-radius: 20px;
-            height: 42px;
-            width: 100px;
-        }
-
-        #b1 {
-            border-color: chartreuse;
-            background-color: black;
-            color: chartreuse;
-            font-size: medium;
-        }
-
-        #b2 {
-            background-color: chartreuse;
-            font-size: medium;
-            border-color: chartreuse;
-        }
-
-        #menubar {
-            display: none;
-        }
-
-        @media screen and (max-width:1279px) {
-
-            #what {
-                display: none;
-            }
-
-            #menubar {
-                display: flex;
-                padding-left: 40px;
-            }
-
-
-        }
-    </style>
 </head>
 
 <body>
+    <!-- navbar -->
     <div class="nav">
         <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFjWSEK-qUXIhw-vYFdccmArLpv4uGdzDtUg&s"
                 alt=""></div>
@@ -133,7 +30,7 @@
             <a href="">Support</a>
         </div>
 
-        <div id="pla">
+        <div id="country">
             <select name="" id="">
                 <option value="">US</option>
                 <option value="">UK</option>
@@ -148,6 +45,263 @@
         </div>
 
     </div>
+
+
+
+    <!-- slide0 -->
+    <div class="slide0">
+        <video autoplay muted id="video_1">
+            <source
+                src="https://videos.ctfassets.net/ilblxxee70tt/19Z1nT89lljUJ9qnvs4IGk/80aa9bf07e9c191de3c75454e79b4070/1920x1080_v3.webm"
+                type="video/webm ">
+        </video>
+
+         <video autoplay muted id="video_2">
+            <source
+                src="https://videos.ctfassets.net/ilblxxee70tt/waxSB26UmRqluVk2n9cgL/e8e4d56f44a6a05c27bcdabf0ab36b0a/430x900.webm"
+                type="video/webm ">
+        </video>
+
+        <div id="content0">
+            <h3>October 14-27</h3>
+            <h1 style="color: #b8a36a; font-size:70px; font-weight: 200; font-style: normal;">A million reasons to go
+                Gold</h1>
+            <p style="color: aliceblue; font-size:18px;">Your piece of $1,000,000 is waiting to claim. Only with
+                Robinhood Gold ($5/month).</p>
+            <h5 style="color: white; font-size:16px;">Terms and subscriptions apply</h5>
+            <button style="width: 120px; height: 45px; font-size: medium; font-weight: 200; font-weight:500;">Go
+                Gold</button>
+        </div>
+    </div>
+
+
+    <!-- slide1 -->
+    <div class="slide1">
+        <div id="content1">
+
+            <h1 style="color: chartreuse; font-size: 50px; font-weight: normal;">Intuitive trading tools</h1>
+            <h1 style="color: azure; font-size: 50px; font-weight: normal;">Build your strategy and track market trends,
+                seamlessly</h1>
+            <p style="color: aliceblue; font-size: medium;">Trade stocks, options, crypto, and more on Robinhood Legend
+                and the Robinhood app.</p>
+            <button id="b3"
+                style="color: black; background-color:chartreuse; width: 150px; height: 45px; border-color: chartreuse; font-size:medium;">Learn
+                More</button>
+        </div>
+
+    </div>
+
+
+    <!-- slide2 -->
+    <div class="slide2">
+        <div id="content2">
+            <h1 style="font-size: 45px; font-weight: normal;">Get started with Robinhood Crypto
+                Trade crypto 24/7</h1>
+            <p style="font-size: medium; font-weight: 700;">Start with as little as $1. Buy, sell, and transfer BTC,
+                ETH, XRP, SOL, DOGE, SHIB, and more.</p>
+            <a style="color: grey; font-family: sans-serif; font-size: small;" href="">Crypto Risk Disclosures
+            </a><br><br>
+            <button id="b3"
+                style="color: rgb(255, 255, 255); background-color:rgb(0, 0, 0); width: 150px; height: 45px; border-color: rgb(0, 0, 0); font-size:medium;">Learn
+                More</button>
+        </div>
+
+    </div>
+
+    <!-- slide3 -->
+    <div class="slide3">
+        <div id="content3">
+            <h1 style="font-size: 45px; font-weight: normal; color: white;">Your portfolio, handled by the pros</h1>
+            <p style="font-size: medium; font-weight: 500; color: aliceblue;">Get timely market insights with an
+                expert-managed portfolio that proactively adjusts your investments. Robinhood Gold members get zero
+                management fees on every dollar over $100K.
+            </p>
+            <p style="font-size: medium; font-weight: 700; color: aliceblue;">Terms apply. Gold subscription $5/month.
+            </p><br>
+            <button id="b3"
+                style="color: black; background-color:chartreuse; width: 200px; height: 45px; border-color: chartreuse; font-size:medium;">Explore
+                Strategies Now</button><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <p style="font-size:small; font-weight: normal; color: #000;">For illustrative purposes only. Portfolio
+                management offered through Robinhood Asset Management (“Robinhood Strategies”), an SEC-registered
+                investment advisor. Gold membership is offered by Robinhood Gold, LLC.</p>
+        </div>
+    </div>
+
+    <!-- slide4 -->
+    <div class="slide4">
+        <div class="content4_1">
+            <h1
+                style="color: white; text-align: center; font-size: 4rem; font-family: Arial, Helvetica, sans-serif; font-weight: 300;">
+                Robinhood Protection Guarantee</h1>
+            <button
+                style="color: rgb(255, 255, 255); background-color: rgba(0,0,0,0); width: 350px; height: 45px; border-color: rgb(255, 255, 255); font-size:medium;">Learn
+                more about our Commitments</button>
+        </div>
+        <div class="content4_2">
+            <div>
+                <img src="https://images.ctfassets.net/ilblxxee70tt/4eSlnvgaWAu2jaCVAyRcrY/602aa63fb17d4448ef651bd2944e963a/illo_secure.svg"
+                    alt="">
+                <h3 style="text-align: center; color: white;">We work hard to keep your data safe and secure.</h3>
+            </div>
+
+            <div>
+                <img src="https://images.ctfassets.net/ilblxxee70tt/DwoUYJLid0EWhDOJPjFYN/673186170fb52deebdfaeb3691a28cac/illo_protect.svg"
+                    alt="">
+                <h3 style="text-align: center; color: white; ">We protect your account from unauthorized activity.</h3>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/ilblxxee70tt/2KMkk3plAKjRG2fPBI69a1/18a5f48bbf278bc91008f6904096b559/illo_multi-factor.svg"
+                    alt="">
+                <h3 style="text-align: center; color: white; ">We provide multi-factor authentication on all accounts.
+                </h3>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/ilblxxee70tt/4u2J3HEANe8rXfdytWGpAC/72bd780bca181f59b40dcf8c51f0e996/illo_247.svg"
+                    alt="">
+                <h3 style="text-align: center; color: white; ">We've got your back. We're available to you 24/7.</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- slide5 -->
+    <div class="slide5">
+        <div id="content5">
+            <h1 style="margin-left: 10px; font-size: 50px; font-family: Arial,sans-serif; font-weight:300;">Become a
+                better investor on the
+                go, right in the app</h1>
+            <p style="margin-left: 45px; font-size: 18px; font-family: Arial,sans-serif;">
+                Here's a preview of the things you can learn when you sign up.</p>
+            <div>
+                <button
+                    style=" margin-left: 120px; width: 350px; font-size: medium; font-weight: 600; background-color: #000; color: white;">Sign
+                    up to access Robinhood Learn</button>
+            </div>
+            <img style="width: 500px; height: 400px; padding-top: 40%; padding-left: 10%;"
+                src="https://images.ctfassets.net/ilblxxee70tt/PKdx5QPF2hxl9vcbxm55W/b1942354f732fbb69a019c53c73bf46b/homepage_learn_phone_2x.png"
+                alt="">
+
+        </div>
+
+    </div>
+
+
+    <!-- slide6-->
+    <div class="slide6">
+        <video autoplay muted loop id="video_2">
+            <source
+                src="https://videos.ctfassets.net/ilblxxee70tt/3r1UZhjsj4AexVmCH9hrfH/1e7b93b16249b7ef73025a31d4cfae38/Dotcom_NewGeneration_Animation_WEB.webm"
+                type="video/webm">
+        </video>
+        <div class="content6">
+            <h1 style="color: white; font-size: 60px; text-align: center;">Join a new generation of investors</h1>
+            <button id="b3"
+                style="color: black; background-color:chartreuse; width: 150px; height: 45px; border-color: chartreuse; font-size:medium; margin-left: 15rem;">Get
+                started</button>
+        </div>
+
+    </div>
+
+    <!-- slide7 -->
+    <div class="slide7">
+        <br><br>
+        <div style="padding-left: 2%;">
+            <a style="text-decoration: underline; font-family: Verdana, Geneva, sans-serif; font-size:18px; color: #000; font-weight: 540;"
+                href="">Customer Relationship Summaries | </a>
+            <a style="text-decoration: underline; font-family: Verdana, Geneva, sans-serif; font-size:18px; color: #000; font-weight: 540;"
+                href=""> FINRA’s BrokerCheck</a>
+        </div><br>
+        <hr style="background-color: #000; border-color: #000;"><br>
+
+        <div id="content7">
+            <div>
+                <h2>Product</h2>
+                <a class="linktags7" href="">Invest</a><br><br>
+                <a class="linktags7" href="">Strategies</a><br><br>
+                <a class="linktags7" href="">Trading</a><br><br>
+                <a class="linktags7" href="">Retirement</a><br><br>
+                <a class="linktags7" href="">Gold</a><br><br>
+                <a class="linktags7" href="">Crypto</a><br><br>
+                <a class="linktags7" href="">Legend</a><br><br>
+                <a class="linktags7" href="">Options</a><br><br>
+                <a class="linktags7" href="">Futures</a><br><br>
+                <a class="linktags7" href="">Banking</a><br><br>
+                <a class="linktags7" href="">Credit Card</a><br><br>
+                <a class="linktags7" href="">Social</a><br><br>
+                <a class="linktags7" href="">Ventures</a><br><br>
+                <a class="linktags7" href="">Learn</a><br><br>
+            </div>
+
+            <div>
+                <h2>Company</h2>
+                <a class="linktags7" href="">About us</a><br><br>
+                <a class="linktags7" href="">Blog</a><br><br>
+                <a class="linktags7" href="">Partner With Us</a><br><br>
+                <a class="linktags7" href="">Affiliates</a><br><br>
+                <a class="linktags7" href="">Press</a><br><br>
+                <a class="linktags7" href="">Careers</a><br><br>
+                <a class="linktags7" href="">Commitments</a><br><br>
+                <a class="linktags7" href="">Investor Relations</a><br><br>
+                <a class="linktags7" href="">Support</a><br><br>
+                <a class="linktags7" href="">ESG</a><br><br>
+                <a class="linktags7" href="">Investor Index</a><br><br>
+                <a class="linktags7" href="">Robinhood Merch</a><br><br>
+            </div>
+
+            <div>
+                <h2>Legal & Regulatory</h2>
+                <a class="linktags7" href="">Terms & Conditions</a><br><br>
+                <a class="linktags7" href="">Disclosures</a><br><br>
+                <a class="linktags7" href="">Robinhood Financial <br> Entities US Online <br> Privacy
+                    Statement</a><br><br>
+                <a class="linktags7" href="">Law Enforcement <br> Requests</a><br><br>
+                <a class="linktags7" href="">Your Privacy Choices</a><br><br>
+                <a class="linktags7" href="">Commitments</a><br><br>
+            </div>
+
+            <div>
+                <h2>All investing involves risk.</h2>
+                <a class="linktags7" href="">Brokerage services are offered through Robinhood <br> Financial LLC,
+                    (“RHF”) a registered broker <br> dealer (member SIPC), and clearing <br> services through Robinhood
+                    Securities, LLC, (“RHS”)<br> a registered broker dealer (member SIPC).<br>While there is no
+                    additional cost to use <br>Robinhood Legend, there are other fees <br>associated with your brokerage
+                    account.<br> Review the fee schedule for more information.</a><br><br>
+                <a class="linktags7" href="">Portfolio Management offered through Robinhood Asset <br> Management, LLC
+                    (“Robinhood Strategies” or “RAM”), <br>an SEC-registered investment advisor.<br>For additional
+                    information about Robinhood Strategies,<br> including about services, fees, risks, and conflicts<br>
+                    of interest, please see our firm’s brochure.</a><br><br>
+                <a class="linktags7" href="">Futures and cleared swaps trading is offered <br>by Robinhood Derivatives,
+                    LLC, (“RHD”) a registered<br> futures commission merchant with the Commodity Futures <br>Trading
+                    Commission (CFTC) and a Member of <br>the National Futures Association (NFA).<br> RHD is not FDIC
+                    insured or SIPC protected.</a><br><br>
+                <a class="linktags7" href="">Cryptocurrency services are offered through an <br>account with Robinhood
+                    Crypto, LLC (“RHC”) <br>(NMLS ID: 1702840). Robinhood Crypto is licensed to engage<br> in virtual
+                    currency business activity by the <br>New York State Department of Financial Services.<br>Review a
+                    list of RHC's licenses for more information.<br>Cryptocurrency held through Robinhood Crypto is
+                    <br>not FDIC insured or SIPC protected.</a><br><br>
+                <a class="linktags7" href="">The Robinhood spending account is offered through Robinhood<br> Money, LLC
+                    (“RHY”) (NMLS ID: 1990968), a licensed <br>money transmitter. Review a list of our licenses <br>for
+                    more information.</a><br><br>
+                <a class="linktags7" href="">The Robinhood Cash Card is a prepaid card issued <br>by Sutton Bank, Member
+                    FDIC, pursuant to a license <br>from Mastercard® International Incorporated. Mastercard <br>and the
+                    circles design are registered trademarks of <br>Mastercard International Incorporated.</a><br><br>
+                <a class="linktags7" href="">Robinhood Gold is a subscription-based membership <br>program of premium
+                    services offered through<br> Robinhood Gold, LLC (“RHG”).</a><br><br>
+                <a class="linktags7" href="">Robinhood Gold Card is subject to credit <br>approval and underwriting.
+                    Robinhood Gold Card <br>is offered by Robinhood Credit, Inc. (“RCT”),<br> and is issued by Coastal
+                    Community Bank, pursuant<br> to a license from Visa U.S.A. Inc. RCT is a financial <br>technology
+                    company, not a bank.</a><br><br>
+
+            </div>
+
+        </div>
+
+        <div>
+            <h1 style="font-size: 1700%;">Robinhood</h1>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
