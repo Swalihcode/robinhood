@@ -2,116 +2,156 @@ html,
 body {
     margin: 0;
     padding: 0;
+
 }
 
 /* navbar */
 body {
-    background-color: black;
-}
-
-.nav {
-    position: fixed;
-    border-bottom: 0.5px solid white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: black;
-    height: 70px;
-    width: 100%;
-    z-index: 1000;
-}
-
-img {
-    height: 40px;
-    padding: 13px;
-    width: 160px;
-}
-
-#what {
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    margin-right: 60px;
-}
-
-
-#country {
     background-color: rgb(0, 0, 0);
-    color: white;
-    width: 20%;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 15.5px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-right: 40px;
-    gap: 10px;
-    margin-right: 50px;
-
+    border-bottom: 0.5px solid white;
+    box-sizing: border-box;
+    z-index: 1000;
 
 }
 
-select option {
-    color: rgb(255, 254, 254);
-    background-color: black;
-    font-size: large;
+#logo {
+    width: 10rem;
+    padding-left: 13px;
+    padding-top: 10px;
 }
 
-select {
-    color: rgb(255, 254, 254);
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: larger;
-    border-color: black;
+.nav_body {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
 }
 
-select:hover {
-    color: chartreuse;
-}
-
-a {
+.nav_body a {
     color: white;
-    font-size: large;
     text-decoration: none;
 }
 
-a:hover {
-    color: chartreuse;
+#Get_app {
+    display: none;
+    background-color: chartreuse;
+    border: none;
 }
 
-button {
-    border-radius: 20px;
-    height: 42px;
-    width: 100px;
+.nav_body select {
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
 }
 
-#b1 {
-    border-color: chartreuse;
+select option {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.right_nav {
+    display: flex;
+    gap: 20px;
+    width: 720px;
+    justify-content: end;
+}
+
+.right_nav select {
+    color: white;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.right_nav button {
+    border-radius: 15px;
+    width: 120px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+#log {
     background-color: black;
     color: chartreuse;
-    font-size: medium;
-}
-
-#b2 {
-    background-color: chartreuse;
-    font-size: medium;
     border-color: chartreuse;
+
 }
 
-#menubar {
+#sign {
+    background-color: chartreuse;
+    border: none;
+
+}
+
+.material-symbols-outlined {
     display: none;
 }
 
-@media screen and (max-width:430px) {
+.nav_body a:hover,
+.nav_body select:hover,
+.right_nav select:hover {
+    color: chartreuse;
+}
 
-    #what {
+
+/* all about nav bar */
+
+@media screen and (max-width:1200px) {
+
+    .nav_body {
         display: none;
     }
 
-    #menubar {
-        display: flex;
-        
+    .material-symbols-outlined {
+        font-size: 110px;
+        /* your desired size */
+        color: white;
+        position: relative;
+        top: 0.6rem;
+        right: 0.9rem;
+        display: inline-block;
     }
 
+    #log,
+    #sign {
+        display: none;
+    }
 
+    #Get_app {
+        display: flex;
+        padding: 0;
+        width: 5rem;
+        border-radius: 50px;
+        padding: 0.8rem;
+        position: absolute;
+        top: 1.2rem;
+        left: 60%;
+    }
+
+    #country {
+        display: none;
+    }
 }
 
 
@@ -120,13 +160,15 @@ button {
 video {
     width: 100%;
 }
-#video_2{
+
+#video_2 {
     display: none;
 }
 
 .slide0 {
+    position: relative;
     width: 100%;
-    height: 900px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -139,21 +181,74 @@ video {
 
 }
 
-@media screen and (max-width:430px) {
+#content0>h1 {
+    color: #b8a36a;
+    font-size: 70px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+#content0>p {
+    color: aliceblue;
+    font-size: 18px;
+}
+
+#content0>h5 {
+    color: white;
+    font-size: 16px;
+}
+
+#content0>button {
+    width: 120px;
+    height: 45px;
+    font-size: medium;
+    font-weight: 200;
+    font-weight: 500;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width:1200px) {
     #content0 {
         position: absolute;
-        top: 30px;
-        left: 30%;
-        width: 500px;
+        top: 80px;
+        left: 8%;
+        width: 350px;
         text-align: center;
-        background-color: red;
+
+    }
+
+    #content0>h1 {
+        color: #b8a36a;
+        font-size: 40px;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    #content0>p {
+        color: aliceblue;
+        font-size: 14px;
+    }
+
+    #content0>h5 {
+        color: white;
+        font-size: 14px;
+    }
+
+
+    .slide0 {
+        text-align: center;
+        height: 1000px;
     }
 
     #video_2 {
-        width:100%;
-        height: auto;
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
     }
-    #video_{
+
+    #video_1 {
         display: none;
     }
 }
@@ -178,12 +273,74 @@ video {
     width: 450px;
     height: 300px;
 }
-        @media screen and (max-width:430px) {
-            .slide1{
-                width: 100%;
-                background-image: url("https://images.ctfassets.net/ilblxxee70tt/1jvtb9LgLK7amOfYSgNVk7/d1504fdcb9be25bfa5142ee1481b9f32/mobile_homepage_investing_4x.jpeg");
-            }
-        }
+
+#content1_h1_1 {
+    color: chartreuse;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#content1_h1_2 {
+    color: azure;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+#content1>p {
+    color: aliceblue;
+    font-size: medium;
+}
+
+#content1>button {
+    color: black;
+    background-color: chartreuse;
+    width: 150px;
+    height: 45px;
+    border-color: chartreuse;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1200px) {
+    .slide1 {
+        width: 100%;
+        background-image: url("https://images.ctfassets.net/ilblxxee70tt/1jvtb9LgLK7amOfYSgNVk7/d1504fdcb9be25bfa5142ee1481b9f32/mobile_homepage_investing_4x.jpeg");
+    }
+
+    #content1 {
+        top: 30px;
+        left: 10%;
+        width: 300px;
+    }
+
+    #content1_h1_1 {
+        color: chartreuse;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    #content1_h1_2 {
+        color: azure;
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    #content1>p {
+        color: aliceblue;
+        font-size: medium;
+    }
+
+    #content1>button {
+        color: black;
+        background-color: chartreuse;
+        width: 150px;
+        height: 45px;
+        border-color: chartreuse;
+        font-size: medium;
+        border-radius: 15px;
+    }
+}
+
 /* slide2 */
 .slide2 {
     background-image: url(https://images.ctfassets.net/ilblxxee70tt/1yBfcc0Y35v8vHS6eUXWMR/5ba2fd65e0cc48044084099e57625f94/web_crypto_hero.jpg);
@@ -201,6 +358,65 @@ video {
     width: 450px;
     height: 300px;
 }
+
+#content2>h1 {
+    font-size: 45px;
+    font-weight: normal;
+}
+
+#content2>p {
+    font-size: medium;
+    font-weight: 700;
+}
+
+#content2>a {
+    color: grey;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+#content2>button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    height: 45px;
+    border-color: rgb(0, 0, 0);
+    font-size: medium;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1200px) {
+    .slide2 {
+        background-image: url(https://images.ctfassets.net/ilblxxee70tt/7vB1E5FkoYiyUiDiLbBvRY/0304e170b4885b5a84042916c69bc792/mobile_crypto_hero_3.jpg);
+
+    }
+
+    #content2 {
+        margin-top: 200px;
+        left: 8%;
+        width: 300px;
+        height: 300px;
+    }
+
+    #content2>h1 {
+        font-size: 35px;
+        font-weight: normal;
+    }
+
+    #content2>p {
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    #content2>a {
+        color: grey;
+        font-family: sans-serif;
+        font-size: small;
+    }
+
+}
+
+
 
 /* slide3 */
 .slide3 {
@@ -220,6 +436,64 @@ video {
     height: 300px;
 }
 
+#content3>h1 {
+    font-size: 45px;
+    font-weight: normal;
+    color: white;
+}
+
+#content3_p1 {
+    font-size: medium;
+    font-weight: 500;
+    color: aliceblue;
+}
+
+#content3_p2 {
+    font-size: medium;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+#content3_p3 {
+    font-size: small;
+    font-weight: normal;
+    color: #000;
+}
+
+#content3>button {
+    color: black;
+    background-color: chartreuse;
+    width: 200px;
+    height: 45px;
+    border-color: chartreuse;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1200px) {
+    .slide3 {
+        background-image: url(https://images.ctfassets.net/ilblxxee70tt/42t5C9fq8xRabnCPUCaV3W/2ac191b14f3785e23d1c001d4a31bf0e/RH25_strategiespromo_mobile_homepage_hero.jpg);
+        background-size: cover;
+    }
+
+    #content3 {
+        margin-top: 200px;
+        left: 8%;
+        width: 350px;
+        height: 300px;
+    }
+
+    #content3>h1 {
+        font-size: 35px;
+        font-weight: normal;
+        color: white;
+    }
+
+
+}
+
+
+
 /* slide4 */
 .slide4 {
     width: 100%;
@@ -234,6 +508,24 @@ video {
     width: 50rem;
     height: auto;
 
+}
+
+.content4_1>h1 {
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.content4_1>button {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    width: 350px;
+    height: 45px;
+    border-color: rgb(255, 255, 255);
+    font-size: medium;
+    border-radius: 15px;
 }
 
 .content4_1>button {
@@ -261,12 +553,87 @@ video {
 
 }
 
+.content4_2 div>h3 {
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+    .slide4 {
+        width: 100%;
+        height: 150rem;
+        background-color: rgb(26, 13, 4);
+        overflow: hidden;
+        display: grid;
+        justify-content: center;
+    }
+
+    .content4_1 {
+        width: 30rem;
+        height: auto;
+        margin-top: 20%;
+
+    }
+
+    .content4_1>h1 {
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
+
+    .content4_1>button {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        width: 350px;
+        height: 45px;
+        border-color: rgb(255, 255, 255);
+        font-size: medium;
+        border-radius: 15px;
+
+    }
+
+    .content4_1>button {
+        margin-left: 15%;
+
+    }
+
+    .content4_2 {
+        width: 20rem;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 24rem);
+        padding-bottom: 10rem;
+        text-align: center;
+        position: relative;
+        left: 20%;
+
+
+
+    }
+
+    .content4_2 div>img {
+        width: 230px;
+        height: auto;
+
+    }
+
+    .content4_2>div {
+        width: 280px;
+        height: 320px;
+
+    }
+
+}
+
+
 
 /* slide5 */
 .slide5 {
     background-color: chartreuse;
     width: 100%;
-    height: 1000px;
+    height: 900px;
     display: flex;
     justify-content: center;
 }
@@ -277,19 +644,133 @@ video {
     padding-top: 40px;
     width: 600px;
     height: 20px;
+}
 
+#content5>h1 {
+    margin-left: 10px;
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+#content5>p {
+    margin-left: 45px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+#content5>div {
+    text-align: center;
+    width: 500px;
+}
+
+#content5 div>button {
+    margin-left: 10px;
+    width: 350px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #000;
+    color: white;
+    border-radius: 15px;
+    height: 40px;
+}
+
+#testing>img {
+    width: 500px;
+    height: 400px;
+    padding-top: 40%;
+    padding-left: 4%;
+}
+
+@media screen and (max-width:1200px) {
+    .slide5 {
+        background-color: chartreuse;
+        width: 100%;
+        height: 900px;
+        display: grid;
+        grid-template-columns: repeat(1, 24rem);
+        position: relative;
+    }
+
+    #content5>div {
+        text-align: center;
+        width: 300px;
+    }
+
+    #content5 {
+        /* background-color: aliceblue; */
+        position: relative;
+        margin-right: 50px;
+        margin-top: 60px;
+        width: 300px;
+        height: 250px;
+
+
+
+    }
+
+    #content5>h1 {
+        margin-left: 10px;
+        font-size: 35px;
+        font-family: Arial, sans-serif;
+        font-weight: 300;
+    }
+
+    #content5>p {
+        margin-left: 30px;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+    }
+
+    #content5 div>button {
+        margin-left: 4%;
+        width: 280px;
+        font-size: medium;
+        font-weight: 400;
+        background-color: #000;
+        color: white;
+        border-radius: 15px;
+        height: 40px;
+    }
+
+    #testing {
+        position: absolute;
+        width: 380px;
+        height: 340px;
+        padding-top: 20px;
+
+
+    }
+
+    #testing>img {
+        position: relative;
+        width: 320px;
+        height: 240px;
+        top: rem;
+        left: 0;
+        right: 40px;
+        overflow: hidden;
+
+
+
+    }
 
 }
+
+
+
+
 
 /* slide6 */
 .slide6 {
     width: 100%;
-    height: 700px;
+    height: auto;
     overflow: hidden;
     position: relative;
 
 
 }
+
 
 .content6 {
     position: absolute;
@@ -300,12 +781,51 @@ video {
 
 }
 
+.content6>h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+.content6>button {
+    color: black;
+    background-color: chartreuse;
+    width: 150px;
+    height: 45px;
+    border-color: chartreuse;
+    font-size: medium;
+    margin-left: 15rem;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:1200px) {
+    .content6 {
+        position: absolute;
+        width: 20rem;
+        top: 2rem;
+        left: 10%;
+        
+    }
+
+    .content6>h1 {
+        color: white;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .content6>button {
+        margin-left: 25%;
+    }
+}
+
+
 
 /* slide7 */
 .slide7 {
     background-color: chartreuse;
     width: 100%;
-    height: 1900px;
+    height: 2200px;
 }
 
 .linktags7 {
@@ -323,4 +843,65 @@ video {
     display: flex;
     justify-content: space-evenly;
 
+
+
+}
+
+#content7 div>a {
+    text-decoration: none;
+}
+
+#risk {
+    width: 400px;
+}
+
+#hr2 {
+    display: none;
+}
+#lastrobi{
+    font-size: 270px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    .slide7 {
+        background-color: chartreuse;
+        width: 100%;
+        height: 3000px;
+    }
+
+    .linktags7 {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 14px;
+        color: #000;
+    }
+
+    .linktags7:hover {
+        color: gray;
+    }
+
+    #content7 {
+        padding-left: 0px;
+        display: grid;
+        
+
+    }
+
+    #head7>a {
+        font-size: 14px;
+    }
+
+    #lastrobi {
+        font-size: 80px;
+        padding-left:5px ;
+    }
+
+
+    #content7 div>a {
+        text-decoration: none;
+    }
+
+    #risk {
+        width: 300px;
+    }
 }
